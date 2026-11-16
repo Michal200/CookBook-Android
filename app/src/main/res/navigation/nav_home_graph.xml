@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.cookbook.app.view.fragments.FeedFragment"
+        android:label="@string/app_full_name"
+        tools:layout="@layout/fragment_feed">
+        <action
+            android:id="@+id/action_home_to_map"
+            app:destination="@id/mapFragment" />
+
+        <action
+            android:id="@+id/action_home_to_profile"
+            app:destination="@id/profileFragment" />
+
+        <action
+            android:id="@+id/action_home_to_add_recipe"
+            app:destination="@id/addRecipeFragment" />
+
+        <action
+            android:id="@+id/action_home_to_edit_recipe"
+            app:destination="@id/editRecipeFragment" />
+
+        <action
+            android:id="@+id/action_home_to_recipe_detail"
+            app:destination="@id/recipeDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.cookbook.app.view.fragments.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" >
+
+        <action
+            android:id="@+id/action_map_to_recipe_detail"
+            app:destination="@id/recipeDetailFragment" />
+   </fragment>
+
+    <fragment
+        android:id="@+id/addRecipeFragment"
+        android:name="com.cookbook.app.view.fragments.AddRecipeFragment"
+        android:label="Add Recipe"
+        tools:layout="@layout/fragment_add_recipe" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/editRecipeFragment"
+        android:name="com.cookbook.app.view.fragments.EditRecipeFragment"
+        android:label="Update Recipe Details"
+        tools:layout="@layout/fragment_edit_recipe" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.cookbook.app.view.fragments.RecipeDetailFragment"
+        android:label="Recipe Details"
+        tools:layout="@layout/fragment_recipe_detail" >
+
+        <action
+            android:id="@+id/action_detail_to_edit_recipe"
+            app:destination="@id/editRecipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.cookbook.app.view.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.cookbook.app.view.fragments.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile">
+
+        <action
+            android:id="@+id/action_editProfile_to_profile"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/editProfileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+</navigation>

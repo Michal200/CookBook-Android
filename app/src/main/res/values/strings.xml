@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Cookbook</string>
+    <string name="app_full_name">Community CookBook</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="you_don_t_have_an_account">You don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="you_already_have_an_account">You have already account?</string>
+    <string name="add_recipe">add recipe</string>
+    <string name="feed">Feed</string>
+    <string name="map">Map</string>
+    <string name="profile">Profile</string>
+    <string name="edit">Edit</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="profile_update">Update Details</string>
+    <string name="google_map_api_key">AIzaSyAoHXNlct7AHCY0d7YgMvavHQanhkYX8PQ</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="attach_recipe_image">Attache Recipe Image</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="save">Save</string>
+    <string name="author_id">Author ID</string>
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+    <string name="recipe_empty_message">There is no recipe yet!</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="recipe_description">Recipe description</string>
+    <string name="search_recipes">Search Meal Recipes…</string>
+    <string name="search">Search</string>
+</resources>
